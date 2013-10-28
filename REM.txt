@@ -1,0 +1,27 @@
+index.php > login.php > volunteer.php
+
+volunredirect.php > volunteer.php
+volunteer.php > volunredirect.php //with $_POST[page or set]=$PAGES[something]  
+volunteer.php > volunredirect.php > logout.php
+
+sessions.php : opened only in volunredirect.php and volunteer.php
+
+$_SESSION["page"] variable should be created
+
+Accessible outside
+
+
+Inaccessible outside
+dbconnector.php
+
+Notification Types
+NewCompany - new company created - view company
+ChCompany - company details changed - view company
+NewAlloctn - new student company allocation - view company
+NewRespons - new response - view responses
+date passed, date coming
+
+Anwesha banner
+Back Button
+Student Details
+View Responses
