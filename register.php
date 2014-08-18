@@ -2,18 +2,47 @@
 <!DOCTYPE html>
 
 <HTML>
-
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/register.css">
+</head>
     <BODY>
+        <div class="container">
+            <h1>Sponsorship Registration Portal</h1>
+        <FORM action="register.php" method="post" class="well form-horizontal col-sm-8 col-sm-offset-2" role="form">
 
-        <FORM action="register.php" method="post">
 
-
-            Student ID : <INPUT type="text" name="id" /> <br />
+            <!--Student ID : <INPUT type="text" name="id" class="span3"/> <br />
             Student Username : <INPUT type="text" name="user" /> <br />
-            Password :  <INPUT type="password" name="pass" /> <br />
-            <INPUT type="submit" name="Send" />
+            Password :  <INPUT type="password" name="pass" /> <br />-->
+
+            <div class="form-group">
+                <label for="studentid" class="col-sm-3 control-label">Student ID</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="studentid" placeholder="Student ID" name="id">
+                    </div>
+            </div>
+            <div class="form-group">
+                <label for="username" class="col-sm-3 control-label">Student Username</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="username" placeholder="Username" name="user">
+                    </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-3 control-label">Password</label>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control" id="password" placeholder="Password" name="pass">
+                    </div>
+            </div>
+
+            <div class="form-group -sol-sm-6">
+                <div class="col-sm-offset-3 col-sm-4">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </div>
 
         </FORM>
+    </div>
 
 
 
