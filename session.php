@@ -29,7 +29,8 @@ if (!isset($PAGES)) {
         "Change Company" => "chcompany.php",
         "Student Allocation" => "studentalloc.php",
         "Student Deallocation" => "studdealloc.php",
-        "Logout" => "logout.php"
+        "Logout" => "logout.php",
+        "Register" => "register.php"
     );
 }
 if (!isset($NOTIFICATION_CODES)) {

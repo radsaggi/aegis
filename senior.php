@@ -53,7 +53,7 @@ if (!$user_data) {
                         </ul>
                     </li>
 
-
+                    <li class="li-1"><a href="<?php echo $PAGES["Register"]?>">Registration</a></li>
                 </ul>
             </div>
 
