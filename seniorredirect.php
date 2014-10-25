@@ -153,7 +153,7 @@ function validate_new_company_entries() {
     if (!filter_var($_POST["CompanyName"], FILTER_VALIDATE_REGEXP, array("options" => array('regexp' => '/^[a-zA-Z, ]+$/')))) {
         return "Incorrect Company Name.";
     }
-    if (!filter_var($_POST["Address"], FILTER_VALIDATE_REGEXP, array("options" => array('regexp' => '/^[0-9,\.-:!\(\)a-zA-Z ]+$/')))) {
+    if (!filter_var($_POST["Address"], FILTER_VALIDATE_REGEXP, array("options" => array('regexp' => '/^[0-9,\.\-:!\(\)\/_a-zA-Z;\s+]+$/')))) {
         return "Incorrect Address";
     }
     if (!filter_var($_POST["ContactFirstName"], FILTER_VALIDATE_REGEXP, array("options" => array('regexp' => '/^[a-zA-Z]+$/')))) {
@@ -211,7 +211,7 @@ function validate_ch_company_entries() {
     if (!filter_var($_POST["CompanyName"], FILTER_VALIDATE_REGEXP, array("options" => array('regexp' => '/^[a-zA-Z, ]+$/')))) {
         return "Incorrect Company Name.";
     }
-    if (!filter_var($_POST["Address"], FILTER_VALIDATE_REGEXP, array("options" => array('regexp' => '/^[0-9,\.-:!\(\)a-zA-Z ]+$/')))) {
+    if (!filter_var($_POST["Address"], FILTER_VALIDATE_REGEXP, array("options" => array('regexp' => '/^[0-9,\.\-:!\(\)\/_a-zA-Z;\s+]+$/')))) {
         return "Incorrect Address";
     }
     if (!filter_var($_POST["ContactFirstName"], FILTER_VALIDATE_REGEXP, array("options" => array('regexp' => '/^[a-zA-Z]+$/')))) {

@@ -16,11 +16,6 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
 
---
--- Database: `sponsorship`
---
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `Companies`
@@ -164,24 +159,6 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
-
---
--- Creating users login_user(hasD78PwD9login) and tasker(BidEd61oWl)
---
-
-CREATE USER 'login_user'@'localhost' IDENTIFIED BY 'hasD78PwD9login' ;
-GRANT SELECT, UPDATE ON `sponsorship`.`users` TO 'login_user'@'localhost' ;
-
-CREATE USER 'tasker'@'localhost' IDENTIFIED BY 'BidEd61oWl' ;
-GRANT SELECT, INSERT,UPDATE ON `sponsorship`.`Companies` TO 'tasker'@'localhost' ;
-GRANT SELECT, INSERT, DELETE ON `sponsorship`.`CompanyStudentAllocations` TO 'tasker'@'localhost' ;
-GRANT SELECT, INSERT, DELETE ON `sponsorship`.`Notifications` TO 'tasker'@'localhost' ;
-GRANT SELECT, INSERT ON `sponsorship`.`Probability Index` TO 'tasker'@'localhost' ;
-GRANT SELECT, INSERT,UPDATE ON `sponsorship`.`Responses` TO 'tasker'@'localhost' ;
-GRANT SELECT, INSERT ON `sponsorship`.`SponsorshipCategories` TO 'tasker'@'localhost' ;
-GRANT SELECT, INSERT,UPDATE ON `sponsorship`.`StudentSenior` TO 'tasker'@'localhost' ;
-GRANT SELECT, INSERT,UPDATE ON `sponsorship`.`StudentVolunteer` TO 'tasker'@'localhost' ;
-
 
 
 
